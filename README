@@ -1,0 +1,23 @@
+Plugins description
+1. c.vim: c/c++ IDE
+2. neocomplcache: Ultimate auto-completion system
+3. nerdcommenter: for intensely orgasmic commenting
+4. nerdtree: tree explorer plugin for navigation the filesystem
+5. rainbow: highlights matching parenthesis with a rainbow of colors
+6. supertab: perform all your vim insert mode completions with tab 
+7. tagbar: display tags in a window, ordered by class etc
+
+Aethetics:
+tomorrow
+
+Installation:
+Backup your own vim files:
+mv .vim .vim.bk
+mv .vimrc .vimrc.vk
+
+Clone this repo:
+git clone git@github.com:nanAdair/vimfile.git
+mv vimfile .vim
+
+Create link for .vimrc
+ln -s .vim/vimrc .vimrc
