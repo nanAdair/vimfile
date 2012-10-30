@@ -1,4 +1,7 @@
-Plugins description
+<html>
+<body>
+<h1>Plugins description</h1>
+
 1. c.vim: c/c++ IDE
 2. neocomplcache: Ultimate auto-completion system
 3. nerdcommenter: for intensely orgasmic commenting
@@ -21,3 +24,5 @@ mv vimfile .vim
 
 Create link for .vimrc
 ln -s .vim/vimrc .vimrc
+</body>
+</html>
