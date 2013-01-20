@@ -2,6 +2,7 @@
 filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
+syntax on
 
 " Don`t be comatible with vi
 set nocompatible
