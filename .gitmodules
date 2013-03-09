@@ -10,9 +10,24 @@
 [submodule "bundle/nerdtree"]
     path = bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/rainbow"]
+    path = bundle/rainbow_parentheses
+    url = https://github.com/kien/rainbow_parentheses.vim
 [submodule "bundle/supertab"]
     path = bundle/supertab
     url = https://github.com/ervandew/supertab.git
 [submodule "bundle/tagbar"]
     path = bundle/tagbar
     url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/simple-pairs"]
+    path = bundle/simple-pairs
+    url = https://github.com/vim-scripts/simple-pairs
+[submodule "bundle/python-mode"]
+    path = bundle/python-mode
+    url = https://github.com/klen/python-mode
+[submodule "bundle/vim-markdown"]
+    path = bundle/vim-markdown
+    url = https://github.com/tpope/vim-markdown
+[submodule "bundle/syntastic"]
+    path = bundle/syntastic
+    url = https://github.com/scrooloose/syntastic
