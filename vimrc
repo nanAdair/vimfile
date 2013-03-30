@@ -10,6 +10,10 @@ set nocompatible
 " Proventing some securtiy exploits may come with modelines
 set modelines=0
 
+" Set cursor
+set cursorline
+set cursorcolumn
+
 " Tab settings
 set tabstop=4
 set shiftwidth=4
@@ -26,7 +30,6 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
@@ -174,3 +177,7 @@ let g:pymode_syntax_highlight_exceptions = g:pymode_syntax_all
 
 " For fast machines
 let g:pymode_syntax_slow_sync = 0
+
+" ctags settings
+set tags=tags;
+set autochdir
