@@ -15,6 +15,7 @@ nanAdair's vim files
    one collection
 10. [vim-markdown](https://github.com/tpope/vim-markdown): markdown syntax highlight
 11. [syntastic](https://github.com/scrooloose/syntastic): syntax checking
+12. [zencoding](https://github.com/mattn/zencoding-vim): fast html coding
 
 ## Aesthetics ##
 
