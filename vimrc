@@ -63,9 +63,11 @@ vnoremap <tab> %
 
 " Handle long lines
 set wrap
-set textwidth=79
+set textwidth=85
 set formatoptions=qrn1
 set colorcolumn=85
+" handle the long lines problem with unicode
+set formatoptions+=mM
 
 " Quick Escape
 inoremap jj <ESC>
@@ -181,3 +183,5 @@ let g:pymode_syntax_slow_sync = 0
 " ctags settings
 set tags=tags;
 set autochdir
+
+" vimwiki configuration
