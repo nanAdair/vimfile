@@ -15,29 +15,12 @@ nanAdair's vim files
    one collection
 10. [vim-markdown](https://github.com/tpope/vim-markdown): markdown syntax highlight
 11. [syntastic](https://github.com/scrooloose/syntastic): syntax checking
-12. [zencoding](https://github.com/mattn/emmet-vim): fast html coding
+12. [stl-highlight](https://github.com/Mizuchi/STL-Syntax): STL syntax highlighting
+13. [mutiple-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text
+    style multiple selections for Vim
 
 ## Aesthetics ##
 
-* [tomorrow](https://github.com/ChrisKempson/Tomorrow-Theme/tree/master/Vim)
+* [tomorrow](https://github.com/chriskempson/vim-tomorrow-theme)
 
 ## Installation ##
-
-Backup your own vim files:  
-
-    mv .vim .vim.bk
-    mv .vimrc .vimrc.vk
-
-Clone this repo:  
-
-    git clone git@github.com:nanAdair/vimfile.git
-    mv vimfile .vim
-
-Create link for .vimrc  
-
-    ln -s .vim/vimrc .vimrc
-    
-Update the submodules  
-    
-    cd .vim
-    git submodule init && git submodule update
