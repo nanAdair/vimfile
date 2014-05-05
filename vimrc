@@ -1,11 +1,15 @@
-" Loading pathogen to manage the plugins
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-syntax on
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Don`t be comatible with vi
-set nocompatible
+" Use Vundle to manage plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Plugins
+source ~/.vim/plugins.vim
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Proventing some securtiy exploits may come with modelines
 set modelines=0
@@ -13,6 +17,9 @@ set modelines=0
 " Set cursor
 set cursorline
 set cursorcolumn
+
+" Enable syntax highlight
+syntax on
 
 " Tab settings
 set tabstop=4
@@ -35,9 +42,6 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-
-" Show the rative number related to the current line
-" set relativenumber
 
 " Active undo file even after modifying it
 set undofile
@@ -65,7 +69,7 @@ vnoremap <tab> %
 set wrap
 set textwidth=85
 set formatoptions=qrn1
-set colorcolumn=85
+set colorcolumn=100
 " handle the long lines problem with unicode
 set formatoptions+=mM
 
@@ -105,10 +109,9 @@ nmap <F5> :TagbarToggle<cr>
 " Color settins
 set t_Co=256
 color Tomorrow-Night-Bright
-set cursorline
 set background=dark
 
-" F2 become a toggle for nuber display
+" F2 become a toggle for number display
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " Rainbow Parentheses
@@ -184,4 +187,7 @@ let g:pymode_syntax_slow_sync = 0
 set tags=tags;
 set autochdir
 
-" vimwiki configuration
+" Make syntastic support c++11
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 '
+
