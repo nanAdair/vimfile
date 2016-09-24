@@ -14,6 +14,9 @@ filetype plugin indent on    " required
 " Proventing some securtiy exploits may come with modelines
 set modelines=0
 
+" make clipboard the system one
+set clipboard=unnamed
+
 " Set cursor
 set cursorline
 set cursorcolumn
@@ -54,6 +57,12 @@ set smartcase
 set incsearch
 set showmatch
 set hlsearch
+
+" window setting
+if has('gui_running')
+    set guioptions-=L
+    set guioptions+=r
+endif
 
 " Change <leader> key
 let mapleader = ","
@@ -191,3 +200,31 @@ set autochdir
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 '
 
+" Powerline setting
+"let g:Powerline_symbols = 'fancy'
+"set laststatus=2
+"set noshowmode
+"set t_Co=256
+
+"set guifont=PowerlineSymbols\ for\ Powerline
+"set nocompatible
+"set t_Co=256
+"let g:Powerline_symbols = 'fancy'
+set rtp+=/Library/Python/2.7/site-packages/powerline/bindings/vim
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
+if has("gui_running")
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        set guifont=Inconsolata\ for\ Powerline:h15
+    endif
+endif
+
+"set fold
+set foldmethod=indent

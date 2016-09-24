@@ -18,6 +18,7 @@ nanAdair's vim files
 12. [stl-highlight](https://github.com/Mizuchi/STL-Syntax): STL syntax highlighting
 13. [mutiple-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text
     style multiple selections for Vim
+14. [powerline](https://github.com/powerline/powerline)
 
 ## Aesthetics ##
 
